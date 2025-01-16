@@ -23,7 +23,7 @@ if _G.Fast_Delay == nil then
 	_G.Fast_Delay = 0.3
 end
 spawn(function()
-    while true do wait()
+    while true do wait()Tara
         getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(Kick)
             if not _G.TP_Ser and _G.Rejoin then
                 if Kick.Name == 'ErrorPrompt' and Kick:FindFirstChild('MessageArea') and Kick.MessageArea:FindFirstChild("ErrorFrame") then
@@ -87,24 +87,24 @@ getgenv()['JsonDecode'] = function(msg)
     return game:GetService("HttpService"):JSONDecode(msg)
 end
 getgenv()['Check_Setting'] = function(Name)
-    if not _G.Dis and not isfolder('Switch Hub BF Premium') then
-        makefolder('Switch Hub BF Premium')
+    if not _G.Dis and not isfolder(' Hub BF Premium') then
+        makefolder('Tara Hub BF Premium')
     end
-    if not _G.Dis and not isfile('Switch Hub BF Premium/'..Name..'.json') then
-        writefile('Switch Hub BF Premium/'..Name..'.json',JsonEncode(_G.Setting_table))
+    if not _G.Dis and not isfile('Tara Hub BF Premium/'..Name..'.json') then
+        writefile('Tara Hub BF Premium/'..Name..'.json',JsonEncode(_G.Setting_table))
     end
 end
 getgenv()['Get_Setting'] = function(Name)
-    if not _G.Dis and isfolder('Switch Hub BF Premium') and isfile('Switch Hub BF Premium/'..Name..'.json') then
-        _G.Setting_table = JsonDecode(readfile('Switch Hub BF Premium/'..Name..'.json'))
+    if not _G.Dis and isfolder('Tara Hub BF Premium') and isfile('Tara Hub BF Premium/'..Name..'.json') then
+        _G.Setting_table = JsonDecode(readfile('Tara Hub BF Premium/'..Name..'.json'))
         return _G.Setting_table
 	elseif not _G.Dis then
         Check_Setting(Name)
     end
 end
 getgenv()['Update_Setting'] = function(Name)
-    if not _G.Dis and isfolder('Switch Hub BF Premium') and isfile('Switch Hub BF Premium/'..Name..'.json') then
-        writefile('Switch Hub BF Premium/'..Name..'.json',JsonEncode(_G.Setting_table))
+    if not _G.Dis and isfolder('Tara Hub BF Premium') and isfile('Tara Hub BF Premium/'..Name..'.json') then
+        writefile('Tara Hub BF Premium/'..Name..'.json',JsonEncode(_G.Setting_table))
 	elseif not _G.Dis then
         Check_Setting(Name)
     end
@@ -141,7 +141,7 @@ end
 
 function Text(value)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Switch Notification", 
+        Title = "Tara Notification", 
         Text = tostring(value),
         Icon = "http://www.roblox.com/asset/?id=9606070311",
         Duration = 10
@@ -149,7 +149,7 @@ function Text(value)
 end
 function Com()
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Switch Notification", 
+        Title = "Tara Notification", 
         Text = "✅  Complete",
         Icon = "http://www.roblox.com/asset/?id=9606070311",
         Duration = 5
@@ -3689,13 +3689,13 @@ if IKAI then
 end
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Switch Notification", 
+	Title = "Tara Notification", 
 	Text = "ฟังชั่นที่มีไอคอนนี้สามารถเปิด\nพร้อมฟามเวลได้",
 	Icon = "http://www.roblox.com/asset/?id=9610159123",
 	Duration = 8
 })
 
-local win = library:Window("Switch",[[Hub]],[[Version : Premium ]],"9606070311",Enum.KeyCode.RightControl)
+local win = library:Window("Tara",[[Hub]],[[Version : Premium ]],"9606070311",Enum.KeyCode.RightControl)
 local General_Tab = win:Tab("General",[[7040391851]])
 local Quest_Tab = win:Tab("    Quest & Item",[[9606626859]])
 local PvP_Tab = win:Tab("PvP",[[9606626034]])
