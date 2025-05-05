@@ -1,0 +1,3 @@
+
+-- https://discord.gg/25ms
+loadstring(game:HttpGet("https://you.whimper.xyz/sources/btteam/BloxFruits.lua"))()
