@@ -85,7 +85,7 @@ do
     )
 
     --------------------------------------------------------------------------------------------------------------------------------------------
-    Main:AddToggle("Farm Level",_G.AutoFarm,function(value)
+    Tabs.Main:AddToggle("Farm Level",_G.AutoFarm,function(value)
         _G.AutoFarm = value
         StopTween(_G.AutoFarm)
         saveSettings()
