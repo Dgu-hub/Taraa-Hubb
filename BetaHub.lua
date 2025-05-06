@@ -52,7 +52,7 @@ local Tabs = {
     Title = "Farm Level",
     Description = "AutoFarmLevel",
     Default = _G.AutoFarm or false,
-    Callback = function(value)
+    Callback = function()
         _G.AutoFarm = value
         StopTween(_G.AutoFarm)
         saveSettings()
