@@ -106,9 +106,8 @@ game.Players.LocalPlayer.Backpack.DescendantRemoving:Connect(function(tool)
 	toolDropdown:Refresh(tools)
 end)
 
-        MainSection:NewToggle("Farm Level",_G.AutoFarm,function(state)
-            if state then
-        _G.AutoFarm = state
+        MainSection:NewToggle("Farm Level",_G.AutoFarm,function(value)
+        _G.AutoFarm = value
         StopTween(_G.AutoFarm)
         saveSettings()
     end)
