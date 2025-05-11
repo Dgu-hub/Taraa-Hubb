@@ -1,4 +1,4 @@
-"if (game:GetService("CoreGui")):FindFirstChild("NoxHub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
+if (game:GetService("CoreGui")):FindFirstChild("NoxHub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
 	(game:GetService("CoreGui")).NoxHub:Destroy();
 	(game:GetService("CoreGui")).ScreenGui:Destroy();
 end;
@@ -1609,4 +1609,4 @@ function Update:Window(Config)
 	end;
 	return uitab;
 end;
-return Update;"
+return Update;
