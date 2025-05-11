@@ -1,4 +1,4 @@
-"-- local function scary()
+-- local function scary()
 --     warn("❌ This script must only be executed from the offical NoxHub loader")
 --         return
 --     end
@@ -2286,4 +2286,4 @@ spawn(function()
 					local Noclip = Instance.new("BodyVelocity");
 					Noclip.Name = "BodyClip";
 					Noclip.Parent = (game:GetService("Players")).LocalPlayer.Character.HumanoidRootPart;
-					Noclip.MaxForce…"
+					Noclip.MaxForce…
